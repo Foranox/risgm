@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+
+@font-face {
+font-family: 'AktivGroteskCorp';
+url('fonts/AktivGroteskCorp-Regular.woff') format('woff'),
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'AktivGroteskCorp';
+url('fonts/AktivGroteskCorp-Bold.woff') format('woff'),
+font-weight: bold;
+font-style: bold;
+}
+
+
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; 
+}
+
+._block {
+  margin: 700px 0 0;
+  position: relative;
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 60%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 60%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; 
+  letter-spacing: -0.31em; 
+  word-spacing: -0.43em; 
+}
+
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 1700px;
+  color: #c1c1c1;
+  font-family: AktivGroteskCorp, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+.screen1 {
+  margin: 0 auto;
+  padding: 50px 140px 140px;
+  position: relative;
+  width: 100%; 
+  background: url(images/image.jpg) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.logo {
+  display: block;
+  position: relative;
+}
+
+.h1 {
+  color: #ffffff;
+  font-size: 60px;
+  text-align: left;
+}
+.about_us_block {
+  margin: 0 auto;
+  padding: 0 150px;
+  position: relative;
+  width: 1700px;
+}
+
+.about_us_block:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+
+.stormtrooper_art {
+  float: left;
+  margin: 0 64px 0 0;
+}
+.about_us {
+  float: left;
+  margin: 185px 0 0;
+  position: relative;
+  width: 550px;
+}
+.headerdark {
+  color: #242424;
+  font-size: 30px;
+  font-weight: bold;
+}
+.btn {
+  display: table;
+  margin: 15px 0 0 1px;
+  max-width: 300px;
+  min-height: 35px;
+  min-width: 85px;
+  padding: 0 20px;
+  position: relative;
+  /* width: 83px; */
+  background: #252525;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+}
+.vkbanner {
+	margin: 0 auto;
+    padding: 50px 450px 60px 650px;
+    position: relative;
+    width: 100%;
+    background: url(images/image_2.png) no-repeat center 0;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.vktext {
+  float: left;
+  margin: 0 79px 0 0;
+  position: relative;
+  width: 538px;
+}
+.roadmap {
+margin: 0 auto;
+  overflow: hidden;
+  padding: 75px 0 75px;
+  position: relative;
+  width: 100%; 
+  background: url(images/image_3.png) no-repeat center 0;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.textdark {
+  color: #6a6a6a;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 20px;
+}
+.roadmap_cards {
+  margin: 75px auto 0;
+  position: relative;
+  width: 1500px;
+}
+.roadmap_cards > * {
+  float: left;
+  margin: 0 25px 0 0;
+}
+.roadmap_cards > *:last-child {
+  margin-right: 0 !important;
+}
+
+.roadcard_mini {
+  min-width: 31px;
+  position: relative;
+  width: 163px;
+  margin-top: 169px !important;
+  text-align: center;
+}
+
+.roadcard_big {
+  min-width: 31px;
+  position: relative;
+  width: 163px;
+  text-align: center;
+}
+
+.gallery {
+  display: table;
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+  max-width: 1000px;
+}
+.row {
+  position: relative;
+}
+
+.slider_block {
+    margin-top: 75px;
+    position: relative;
+    width: 100%;
+    background: url(images/bg.jpg) no-repeat center 0;
+    background-position: center top;
+    background-size: cover;
+    padding: 170px 15% 0;
+}
+
+.unit_description {
+  float: left;
+  margin: 100px 120px 0 0;
+  position: relative;
+  width: 600px;
+}
+.trooper_art {
+  float: left;
+  position: relative;
+  width: 478px;
+}
+.trooper_art > * {
+  float: left;
+  margin: 0 44px 0 0;
+}
+.trooper_art > *:last-child {
+  margin-right: 0 !important;
+}
+.arrow_left {
+  margin-top: 184px !important;
+}
+.arrow_right {
+  margin-top: 184px !important;
+}
+.howtoplay {
+   margin-top: 75px;
+    margin-left: 35%;
+    position: relative;
+    width: 500px;
+}
+
+.donate-block {
+  margin: 75px auto 0;
+  padding: 365px 0 370px;
+  position: relative;
+  width: 100%; 
+  background: url(images/image_4.jpg) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.donate {
+  margin-left: 60%;
+  position: relative;
+  max-width: 500px;
+}
+.headerlight {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.textlight {
+  margin-top: 12px;
+  line-height: 21px;
+}
+.banners-block {
+  margin: 75px auto 0;
+  position: relative;
+  width: 1500px;
+}
+.banners {
+  margin: 50px auto 0;
+  position: relative;
+  text-align: center;
+}
+.banners > * {
+  margin: 0 75px 0 0;
+}
+.banners > *:last-child {
+  margin-right: 0 !important;
+}
+a.layer img {
+  display: block;
+}
+a.layer-2 img {
+  display: block;
+}
+a.layer-3 img {
+  display: block;
+}
+.banners > * {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer {
+  margin: 90px auto 0;
+  padding: 45px 0px 80px 80px;
+  position: relative;
+  background: #252525;
+}
+.logo-2 {
+  float: left;
+  margin: 8px 0 0;
+}
+.contacts {
+  float: left;
+  margin: 0 0 0 99px;
+  position: relative;
+  width: 192px;
+}
+.headersmall {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.textbold {
+  color: #242424;
+  font-weight: bold;
+}
+.textboldlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/* стили основного контейнера слайдера */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control {
+  width: 13px;
+  height: 23px;
+  margin-top: 184px !important;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev {
+  left: 0;
+}
+
+.slider__control_next {
+  right: 0;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+  background-image: url("images/arrow_left.png") ;
+}
+
+.slider__control_next::before {
+  background-image: url("images/arrow_right.png");
+}
+
+
+
+
+
